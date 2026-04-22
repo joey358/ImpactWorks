@@ -2,6 +2,13 @@ import Link from "next/link";
 
 const variants = [
   {
+    slug: "connected",
+    title: "V4 · Connected Community ★",
+    tagline: "Evolved from V1+V2. Community photo + animated service-wires connecting people to the 6 core sectors. Stats fold into a warm horizon band at the base of the hero — no more dark navy anywhere.",
+    vibe: "Most distinctive. Encodes what Impact Works actually does (connects people → services) in the hero visual itself. Kills the second dark-navy stats moment.",
+    featured: true,
+  },
+  {
     slug: "warm",
     title: "V1 · Warm Community",
     tagline: "Full-bleed community photo, cream gradient overlay, orange accents.",
@@ -36,7 +43,11 @@ export default function PreviewIndex() {
             <Link
               key={v.slug}
               href={`/preview/${v.slug}`}
-              className="block bg-white rounded-2xl border border-slate-200 p-6 hover:shadow-lg hover:-translate-y-0.5 transition-all"
+              className={`block rounded-2xl p-6 hover:shadow-lg hover:-translate-y-0.5 transition-all ${
+                v.featured
+                  ? "bg-gradient-to-br from-white to-[#FFF4E0] border-2 border-brand-orange/40 shadow-md"
+                  : "bg-white border border-slate-200"
+              }`}
             >
               <div className="flex items-start justify-between gap-4">
                 <div>

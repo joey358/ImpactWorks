@@ -43,7 +43,7 @@ A warm cream gradient (`from-[#FDFAF3] via-white to-[#F8FAFC]`) washes the hero 
 |---|---|---|
 | Eyebrow | `font-mono · uppercase · tracking-[0.2em] · text-brand-orange · text-xs` | `Community Impact Platform` |
 | Headline | `font-display · font-extrabold · text-hero · text-slate-900` | `Connecting Communities to ` + `<span class="gradient-text-orange">Critical Services</span>` |
-| Body | `font-display · body-text · text-slate-600 · max-w-lg` | `We connect people to the help they need and the organizations that provide it — in one coordinated network.` (shortened from 38→22 words) |
+| Body | `font-display · body-text · text-slate-600 · max-w-lg` | *Keep original, verbatim:* "Impact Works develops data-driven solutions that make it easier for people to find the help they need while strengthening collaboration between organizations that serve the community." |
 | Primary CTA | `.btn-primary` (existing) | `Explore Linksy →` → `/platform` |
 | Secondary CTA | New `.btn-outline-light` (border-slate-300 on white) | `See Community Impact` → `/impact` |
 

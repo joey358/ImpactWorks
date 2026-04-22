@@ -77,6 +77,12 @@
            active:scale-[0.97] transition-all duration-300 cursor-pointer;
   }
 
+  .btn-outline-light {
+    @apply inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-slate-300 text-slate-700 font-display font-semibold
+           px-8 py-4 rounded-xl hover:border-brand-orange hover:text-brand-orange hover:bg-white
+           active:scale-[0.97] transition-all duration-300 cursor-pointer;
+  }
+
   .btn-white {
     @apply inline-flex items-center gap-2 bg-white text-brand-orange font-display font-bold
            px-8 py-4 rounded-xl hover:bg-white/90 hover:shadow-lg

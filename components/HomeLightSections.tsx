@@ -10,8 +10,10 @@ import ScrollReveal from "@/components/ScrollReveal";
  */
 export default function HomeLightSections({
   statsBackground = "cream",
+  hideStats = false,
 }: {
   statsBackground?: "cream" | "ivory" | "blue-tint";
+  hideStats?: boolean;
 }) {
   const statsBg =
     statsBackground === "blue-tint"
@@ -160,6 +162,7 @@ export default function HomeLightSections({
       </section>
 
       {/* LIGHT STATS — replaces the dark navy stats of the live site */}
+      {!hideStats && (
       <section className={`section-pad ${statsBg}`}>
         <div className="max-w-site mx-auto">
           <ScrollReveal className="text-center mb-16">
@@ -185,6 +188,7 @@ export default function HomeLightSections({
           </div>
         </div>
       </section>
+      )}
 
       {/* CTA — warm gradient, already light-friendly */}
       <section className="py-20 md:py-28 px-6 bg-gray-50">
